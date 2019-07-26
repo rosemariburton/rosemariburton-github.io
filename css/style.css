@@ -1,0 +1,94 @@
+/* Portfolio*/
+h1 {
+    color:whitesmoke;
+}
+h2 {
+    color: lightskyblue;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.indexBody {
+    font-family: 'Nanum Gothic', sans-serif, Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10vh 5vh 50vh 10vh 5vh 20vh;
+    /* grid-template-rows: 15vh 15vh 30vh 10vh 15vh 15vh; */
+    grid-template-areas: "mnu mnu mnu" ".   .   ." ".   hdr ." ".   mn  ." ".   .   ." "ftr ftr ftr";
+}
+
+.mainMenu {
+    grid-area: mnu;
+    text-align: center;
+    background-color: black;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 5px 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.mainMenu a:active {
+    color: rgb(255, 196, 0);
+}
+
+.mainMenu a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.mainMenu a:hover {
+    background-color: palegoldenrod;
+    color: black;
+}
+
+.indexHeader {
+    grid-area: hdr;
+    color: black;
+}
+.indexHeader figure img {
+    border-radius: 10px 10px;
+    box-shadow: 0 0 8px 8px black inset;
+    height: 200px;
+    margin: 20px;
+}
+.indexMain {
+    grid-area: mn;
+}
+
+footer {
+    grid-area: ftr;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.socialItem {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+
+
+.socialItem img {
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+}
+
+.socialItem img:hover {
+    height: 64px;
+    width: 64px;
+}
+
+.legal {
+    color: lightslategray;
+}
