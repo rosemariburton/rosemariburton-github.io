@@ -1,0 +1,56 @@
+/* Portfolio*/
+.indexBody{
+    /* font-family: 'Nanum Gothic', sans-serif, Arial, Helvetica, sans-serif; */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10vh 5vh 50vh 10vh 5vh 20vh;
+    /* grid-template-rows: 15vh 15vh 30vh 10vh 15vh 15vh; */
+    grid-template-areas:
+    "mnu mnu mnu"
+    ".   .   ."
+    ".   hdr ." 
+    ".   mn  ."
+    ".   .   ."
+    "ftr ftr ftr";
+}
+.mainMenu {
+    grid-area: mnu;
+    text-align: center;
+}
+.indexHeader {
+    grid-area: hdr;
+    color: black;
+}
+.indexMain {
+    grid-area: mn;
+}
+footer {
+    grid-area: ftr;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+.socialItem {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+}
+.indexHeader figure img {
+    height: 150px;
+    margin: 20px;
+
+}
+.socialItem img {
+    height: 48px;
+    width: 48px;
+
+}
+
+/* font-family: 'Yanone Kaffeesatz', sans-serif; */
